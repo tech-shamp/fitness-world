@@ -1,0 +1,7 @@
+footer {
+  width: 100%;
+  padding: 10rem 3.2rem;
+  font-size: large;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
