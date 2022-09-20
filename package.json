@@ -1,7 +1,7 @@
 {
   "name": "tutorial-project",
   "version": "0.1.0",
-  "homepage": "https://tech-shamp.github.io/",
+  "homepage": "https://tech-shamp.github.io/tutorial-project-react",
   "private": false,
   "dependencies": {
     "gh-pages": "^4.0.0",
