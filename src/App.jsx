@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import About from "./pages/about/About"
 import Contact from "./pages/contact/Contact"
@@ -8,7 +7,7 @@ import Home from "./pages/home/Home"
 import NotFound from "./pages/notFound/NotFound"
 import Plans from "./pages/plans/Plans"
 import Trainers from "./pages/trainers/Trainers"
-import Script from "./Script"
+// import Script from "./Script"
 
 const App = () => {
   return (
@@ -25,8 +24,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </Routes>
 
-      <Footer />
-      <Script />
+      {/* <Script /> */}
     </BrowserRouter>
   )
 }
