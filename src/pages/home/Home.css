@@ -192,3 +192,19 @@
   width: 3rem;
   height: 3rem;
 }
+
+/* MEDIA QUERIES (medium screens) */
+@media screen and (max-width: 1024px) {
+  /* MAIN HEADER */
+  .main__header {
+    height: fit-content;
+    padding: 12rem 0;
+  }
+  .main__header-container {
+    gap: 0;
+  }
+  .main__header-circle {
+    width: 16rem;
+    height: 16rem;
+  }
+}
