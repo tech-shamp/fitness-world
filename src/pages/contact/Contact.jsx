@@ -1,7 +1,11 @@
+import { useEffect } from "react"
 import "./Contact.css"
 
 const Contact = () => {
-  // eslint-disable-next-line react/style-prop-object
+  useEffect(() => {
+    document.title = "Contact - Fitness World"
+  })
+
   return <div>Contact</div>
 }
 

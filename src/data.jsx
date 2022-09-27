@@ -4,26 +4,32 @@ export const links = [
   {
     name: "Home",
     path: "/",
+    title: "Home - Fitness World",
   },
   {
     name: "Plans",
     path: "/plans",
+    title: "Plans - Fitness World",
   },
   {
     name: "Trainers",
     path: "/trainers",
+    title: "Trainers - Fitness World",
   },
   {
     name: "Gallery",
     path: "/gallery",
+    title: "Gallery - Fitness World",
   },
   {
     name: "About",
     path: "/about",
+    title: "About - Fitness World",
   },
   {
     name: "Contact",
     path: "/contact",
+    title: "Contact - Fitness World",
   },
 ]
 

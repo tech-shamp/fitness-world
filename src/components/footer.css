@@ -59,3 +59,26 @@ footer {
   margin-top: 5rem;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    margin-top: 7rem;
+  }
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .footer__container article {
+    align-items: center;
+  }
+  .footer__container article p {
+    text-align: center;
+  }
+}
