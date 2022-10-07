@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 import Header from "../../components/Header"
-import HeaderImage from "../../img/header_bg_2.jpg"
+import { plans } from "../../data"
+import HeaderImage from "../../img/header_bg_4.jpg"
+import Card from "../../ui/Card"
 import "./Plans.css"
 
 const Plans = () => {
@@ -9,11 +11,35 @@ const Plans = () => {
   })
 
   return (
-    <Header
-      title="Our Plans"
-      children="Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis sapiente optio suscipit qui! Nesciunt expedita distinctio dolores doloribus quam!"
-      image={HeaderImage}
-    />
+    <>
+      <Header title="Membership Plans" image={HeaderImage}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        officiis sapiente optio suscipit qui! Nesciunt quam!
+      </Header>
+      <section className="plans">
+        <div className="container plans__container">
+          {plans.map(({ id, name, desc, price, features }) => {
+            return (
+              <Card key={id} className="plan">
+                <h3>{name}</h3>
+                <small>{desc}</small>
+                <h1>{`$${price}`}</h1>
+                <h2>/mo</h2>
+                <h4>Features</h4>
+                {features.map(({ feature, available }, index) => {
+                  return (
+                    <p key={index} className={!available ? "disabled" : ""}>
+                      {feature}
+                    </p>
+                  )
+                })}
+                <button className="btn lg">Choose Plan</button>
+              </Card>
+            )
+          })}
+        </div>
+      </section>
+    </>
   )
 }
 

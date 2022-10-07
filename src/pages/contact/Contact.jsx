@@ -27,7 +27,11 @@ const Contact = () => {
             >
               <MdEmail />
             </a>
-            <a href="https://m.me/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://m.me/iboy.shamp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsMessenger />
             </a>
             <a
