@@ -56,6 +56,7 @@
 
   --container-width-lg: 80%;
   --container-width-md: 90%;
+  --container-width-sm: 95%;
 
   --transition: all 400ms ease;
   --transition-200: all 200ms ease;
@@ -205,6 +206,7 @@ section {
 .header__container-bg {
   position: absolute;
   width: 100%;
+  align-items: center;
 }
 .header__container-bg img {
   opacity: 0.5;
@@ -237,7 +239,6 @@ section {
 
   /* HEADER */
   .header__container {
-    width: 76%;
     line-height: 1.3;
   }
 }
@@ -257,7 +258,7 @@ section {
     height: fit-content;
   }
   .header__content {
-    width: var(--container-width-md);
+    width: var(--container-width-sm);
     padding: 3rem 0;
   }
   .header__content p {
