@@ -271,7 +271,7 @@
     gap: 3rem;
   }
   .card.values__value {
-    width: 84%;
+    /* width: 84%; */
     margin-inline: auto;
   }
 

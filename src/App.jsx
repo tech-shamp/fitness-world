@@ -4,25 +4,20 @@ import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import About from "./pages/about/About"
 import Contact from "./pages/contact/Contact"
-import Gallery from "./pages/gallery/Gallery"
+import Gallary from "./pages/gallary/Gallary"
 import Home from "./pages/home/Home"
 import NotFound from "./pages/notFound/NotFound"
 import Plans from "./pages/plans/Plans"
 import Trainers from "./pages/trainers/Trainers"
 
 const App = () => {
-  // const location = useLocation()
-  // useEffect(() => {
-  // do what you want
-  // }, [location.key])
-
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
         <Route path="plans" element={<Plans />} />
-        <Route path="gallery" element={<Gallery />} />
+        <Route path="gallary" element={<Gallary />} />
         <Route path="trainers" element={<Trainers />} />
         <Route path="contact" element={<Contact />} />
         <Route path="about" element={<About />} />
